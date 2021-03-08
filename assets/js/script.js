@@ -9,8 +9,8 @@ var tasks = [];
 var taskFormHandler = function () {
     event.preventDefault();
 
-    var taskNameInput = document.querySelector("input[name='task-name']").value = "";
-    var taskTypeInput = document.querySelector("select[name='task-type']").value = 0;
+    var taskNameInput = document.querySelector("input[name='task-name']").value;
+    var taskTypeInput = document.querySelector("select[name='task-type']").value;
 
     // Rejecting empty inputs
     if (!taskNameInput || !taskTypeInput) {
